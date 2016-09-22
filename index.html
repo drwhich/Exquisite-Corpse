@@ -1,8 +1,11 @@
+    <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Semantic Markup Boilerplate</title>
-        <title>Exquisite Corpse</title>
+        <title>The Mask</title>
+       
         <meta name="description" content="Class demo of html5 boilerplate and html5 structure and semantics">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,6 +13,28 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- Fading in/out Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"> /*Text box fade in on scroll*/
+  
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,0.8);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==0.8) {$(this).fadeTo(500,0);}
+      }
+    });
+  }); $(window).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+
+
     </head>
     <body>
     <body class="main">
@@ -20,6 +45,7 @@
         <!-- Add your site or application content here -->
         
         <main>
+        <div> <!--for main control of fade in-->
        <!--    <p><time datetime="2016-09-20T16:00-07:00" pubdate="pubdate">September 20th, 2016 4:00pm</time></p>
           <p>Hello world! This is HTML5 Boilerplate.</p> -->
         <h1>Exquisite Corpse</h1>
@@ -29,20 +55,25 @@
 
 
         <!-- Brady did this part -->
-  <p>I know this is going to sound crazy, beleive me, I wouldn't beleive any of this if it hadn't happened to me. I was never one to get spooked by the ideas of ghost or the paranormal, hell, I didn't think any of it even existed. But it all changed that night.</p>
+        <div class="fade">
+  <p>I know this is going to sound crazy, beleive me, I wouldn't beleive any of this if it hadn't happened to me. I was never one to get spooked by the ideas of ghost or the paranormal, hell, I didn't think any of it even existed. But it all changed that night.</p></div>
   <br>
-  <p>It all started as an innocent enough night. Some friends had gathered together after a week of exams. We were all worn out, and had maybe a few too many drinks.</p>
+  <div class="fade">
+  <p>It all started as an innocent enough night. Some friends had gathered together after a week of exams. We were all worn out, and had maybe a few too many drinks.</p> </div>
   <br>
-  <p>Now one of my friends, let's call her Jill, was always a scardey cat, and with Halloween coming up, we decided to step things up with our normal pranks on her. We had found an old oni mask in an antique store a few days earlier, and just looking at it was enough to give me the creeps. Even though it was made of wood, the thing almost looked real, at least as far as a depiciton of an evil spirit can go. The mouth was twisted into a cruel smile, the skin blood red, but the eyes were the worst part. Though the eyes had holes so the wearer could see out of it, I swear the thing was watching us. I hated it, so it was perfect for the prank.</p>
+   <div class="fade">
+  <p>Now one of my friends, let's call her Jill, was always a scardey cat, and with Halloween coming up, we decided to step things up with our normal pranks on her. We had found an old oni mask in an antique store a few days earlier, and just looking at it was enough to give me the creeps. Even though it was made of wood, the thing almost looked real, at least as far as a depiciton of an evil spirit can go. The mouth was twisted into a cruel smile, the skin blood red, but the eyes were the worst part. Though the eyes had holes so the wearer could see out of it, I swear the thing was watching us. I hated it, so it was perfect for the prank.</p></div>
   
 
         <!-- end brady stuff -->
 
         <!-- Eli -->
 <section class="Eli">
-  <p>Typically, me and all my friends get super excited about pranks. Especially towards Jill. However, instead of thinking about Jill's frightened reaction, we thought about the mask. Who used to own it? Where did it come from? The thoughts were never ending.</p>
+ <div class="fade">
+  <p>Typically, me and all my friends get super excited about pranks. Especially towards Jill. However, instead of thinking about Jill's frightened reaction, we thought about the mask. Who used to own it? Where did it come from? The thoughts were never ending.</p></div>
   <br>
-  <p>I thought it was just me at first, but whenever I was in the room with the mask I felt the temperature drop. I had a feeling it was something about the mask - it had been giving me erie vibes from the start. I knew my friends would think im crazy if I brought that up though. After some more time passed, I noticed goosebumps and chills on all my friends arms and legs. Our air conditioner was broken and it was a pretty warm night. There was more to this mask then any of us originally expected. </p>
+  <div class="fade">
+  <p>I thought it was just me at first, but whenever I was in the room with the mask I felt the temperature drop. I had a feeling it was something about the mask - it had been giving me erie vibes from the start. I knew my friends would think im crazy if I brought that up though. After some more time passed, I noticed goosebumps and chills on all my friends arms and legs. Our air conditioner was broken and it was a pretty warm night. There was more to this mask then any of us originally expected. </p></div>
 </section>
 
          <!--  <p>I wake up at night, and I hear a creak. </p>
@@ -56,56 +87,8 @@
             <figure><img class="toggle" src="img/boo.png" alt="boo" style="position: absolute; top: 125px; left: 100px;" class="boo-pic"></figure>
           </div> -->
 
-         <!--  <h3>abbreviations</h3>
-          <p>Welcome to the <abbr title="Technology Arts and Media">TAM</abbr></p>
-
-          <h2>definitions</h2>
-          <p>What is a <dfn>keytar</dfn>? Well some people define it as a "keyboard shaped like a guitar."</p>
-
-          <h3>figures and figcaptions</h3>
-          <figure>
-            <img src="source" alt="korg keytar" />
-            <figcaption>Caption for the figure</figcaption>
-          </figure>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum <mark>cupiditate cum voluptatem repellat</mark> iusto similique quia id expedita rerum soluta nemo, modi nulla unde repellendus sequi in fugit nihil itaque.</p>
-          <p>Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit. <b>Quasi repudiandae<b> voluptate vero quo <em>nulla excepturi incidunt</em> ratione sunt. <i>In cum odio</i>, nostrum ex ipsa velit sint esse natus aliquid officiis.</p>
-
-          <h3>blockquote and cite</h3>
-          <blockquote cite="url of source">
-            <p>
-              <q>Be yourself everyone else is taken.</q>
-              <cite>Oscar Wilde</cite>
-            </p>
-          </blockquote>
-
-          <h3>details</h3>
-          <details>
-            <summary>summary</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eveniet dolores modi maiores, ad, voluptas vel, vitae quam obcaecati aliquid eum. Blanditiis quas rem facere ipsa magnam eaque aspernatur temporibus.</p>
-            <details>
-              <summary>summary</summary>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eveniet dolores modi maiores, ad, voluptas vel, vitae quam obcaecati aliquid eum. Blanditiis quas rem facere ipsa magnam eaque aspernatur temporibus.</p>
-            </details>
-          </details>
-
-          <h3>code snippets</h3>
-          <code>
-            <pre>
-      &lt;p&gt;this is how you display code&lt;/p&gt;
-            </pre>
-          </code>
-
-        </main>
-
-        <footer>
-          <h3>site address</h3>
-          <address class="">
-            site by me
-          </address>
-@@ -76,7 +44,15 @@
- -->
-
-
+</main>
+</div>
 
         <script>
           $( "i:first" ).on('hover mouseover',function() {
