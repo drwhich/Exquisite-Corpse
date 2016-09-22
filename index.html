@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Semantic Markup Boilerplate</title>
+        <title>Exquisite Corpse</title>
         <meta name="description" content="Class demo of html5 boilerplate and html5 structure and semantics">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,61 +13,29 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- Fading in/out Jquery -->
     </head>
-    <body>
+    <body class="main">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>header</h1>
-        <main>
-          <p><time datetime="2016-09-20T16:00-07:00" pubdate="pubdate">September 20th, 2016 4:00pm</time></p>
-          <p>Hello world! This is HTML5 Boilerplate.</p>
+        <h1>Exquisite Corpse</h1>
+        <main class="container">
+          <p><time  class="hidden" datetime="2016-09-20T16:00-07:00" pubdate="pubdate">September 20th, 2016 4:00pm</time></p>
+          <p>I wake up at night, and I hear a creak. </p>
+          <p>I discover the <i>door</i> sliding open.</p>
+          <p>Who can it be?</p>
+          <p><b>Boo!</b></p>
+          <div style="position: relative; left: 0; top: 0;">
+            <figure>
+              <img class="toggle" src="img/door.png" alt="door" style="position: relative; top: 0; left: 0;" class="door-pic"/>
+            </figure>
+            <figure><img class="toggle" src="img/boo.png" alt="boo" style="position: absolute; top: 125px; left: 100px;" class="boo-pic"></figure>
+          </div>
 
-          <h3>abbreviations</h3>
-          <p>Welcome to the <abbr title="Technology Arts and Media">TAM</abbr></p>
 
-          <h2>definitions</h2>
-          <p>What is a <dfn>keytar</dfn>? Well some people define it as a "keyboard shaped like a guitar."</p>
-
-          <h3>figures and figcaptions</h3>
-          <figure>
-            <img src="source" alt="korg keytar" />
-            <figcaption>Caption for the figure</figcaption>
-          </figure>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum <mark>cupiditate cum voluptatem repellat</mark> iusto similique quia id expedita rerum soluta nemo, modi nulla unde repellendus sequi in fugit nihil itaque.</p>
-          <p>Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit. <b>Quasi repudiandae<b> voluptate vero quo <em>nulla excepturi incidunt</em> ratione sunt. <i>In cum odio</i>, nostrum ex ipsa velit sint esse natus aliquid officiis.</p>
-
-          <h3>blockquote and cite</h3>
-          <blockquote cite="url of source">
-            <p>
-              <q>Be yourself everyone else is taken.</q>
-              <cite>Oscar Wilde</cite>
-            </p>
-          </blockquote>
-
-          <h3>details</h3>
-          <details>
-            <summary>summary</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eveniet dolores modi maiores, ad, voluptas vel, vitae quam obcaecati aliquid eum. Blanditiis quas rem facere ipsa magnam eaque aspernatur temporibus.</p>
-            <details>
-              <summary>summary</summary>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eveniet dolores modi maiores, ad, voluptas vel, vitae quam obcaecati aliquid eum. Blanditiis quas rem facere ipsa magnam eaque aspernatur temporibus.</p>
-            </details>
-          </details>
-
-          <h3>code snippets</h3>
-          <code>
-            <pre>
-      &lt;p&gt;this is how you display code&lt;/p&gt;
-            </pre>
-          </code>
-
-        </main>
-
-        <footer>
-          <h3>site address</h3>
           <address class="">
             site by me
           </address>
@@ -76,7 +44,15 @@
 
 
 
-
+        <script>
+          $( "i:first" ).on('hover mouseover',function() {
+            $( "img:first" ).fadeToggle( "slow", "linear" );
+          });
+          $( "b:first" ).on('hover mouseover',function() {
+            $( "img:last" ).fadeToggle( "fast", function() {
+            });
+          });
+        </script>
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -87,6 +63,21 @@
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
+        <!-- This Javascript is used to center the content 
+        <script>
+        'use strict';
+        $(document).ready(function(){
+          $(function() {
+              $('.main').css({
+                  'position' : 'absolute',
+                  'left' : '50%',
+                  'top' : '100%',
+                  'margin-left' : -$('.main').outerWidth()/2,
+                  'margin-top' : -$('.main').outerHeight()/2
+              });
+          });
+        }); 
+        </script> <!-- End of JS centering the content -->
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>

@@ -106,8 +106,25 @@ h1, h2, h3 {
   font-size: 60px;
 }
 
+.main{
+    background: url('../img/skull-and-bones.jpg');
+    background-size: cover;
+    color: rgb(255,255,255);
+}
 
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    float: center;
+}
 
+.toggle{
+    display: none;
+}
+
+.toggle:hover{
+    display: all;
+}
 
 
 
