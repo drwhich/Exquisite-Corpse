@@ -101,22 +101,22 @@ textarea {
   font-weight: bold;
 }
 
-@@font-face {
+@font-face {
   font-family: 'Gyre';
   src: url('../fonts/gyre.woff') format('woff');
 }
 
-@@font-face {
+@font-face {
   font-family: 'Gyre-Italix';
   src: url('../fonts/gyreitalic.woff') format('woff');
 }
 
-@@font-face {
+@font-face {
   font-family: 'Gyre-Bold';
   src: url('../fonts/gyrebold.woff') format('woff');
 }
 
-@@font-face {
+@font-face {
   font-family: 'Gyre-Bold-Italic';
   src: url('../fonts/gyrebolditalic.woff') format('woff');
 }
@@ -189,7 +189,7 @@ h1, h2, h3 {
   font-size: 60px;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 p{
   text-indent: 3em;
 }
@@ -198,11 +198,11 @@ p{
     background: url('../img/skull-and-bones.jpg');
     background-size: cover;
     color: rgb(255,255,255);
-=======
+/*=======*/
 h1 {
   margin: 0px;
   text-align: center;
->>>>>>> origin/master
+/*>>>>>>> origin/master*/
 }
 
 p {
