@@ -149,22 +149,32 @@ section {
 
 .title {
   background-image: url('../img/skull-and-bones.jpg');
+  padding-bottom: 40%;
+  padding-top: 45%;
 }
 
 .Brady {
   background-image: url('../img/brady.jpg');
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 .Eli {
   background-image: url('../img/eli.jpg');
+   padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 .Daniel {
   background-image: url('../img/daniel.jpg');
+   padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 .Lupe {
   background-image: url('../img/lupe.jpg');
+   padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 .text {
