@@ -101,16 +101,110 @@ textarea {
   font-weight: bold;
 }
 
+@@font-face {
+  font-family: 'Gyre';
+  src: url('../fonts/gyre.woff') format('woff');
+}
+
+@@font-face {
+  font-family: 'Gyre-Italix';
+  src: url('../fonts/gyreitalic.woff') format('woff');
+}
+
+@@font-face {
+  font-family: 'Gyre-Bold';
+  src: url('../fonts/gyrebold.woff') format('woff');
+}
+
+@@font-face {
+  font-family: 'Gyre-Bold-Italic';
+  src: url('../fonts/gyrebolditalic.woff') format('woff');
+}
+
+
+
+html {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  z-index: -1;
+  color: rgb(255,255,255);
+}
+
+
+section {
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 30px;
+}
+
+.title {
+  background-image: url('../img/skull-and-bones.jpg');
+}
+
+.Brady {
+  background-image: url('../img/brady.jpg');
+}
+
+.Eli {
+  background-image: url('../img/eli.jpg');
+}
+
+.Daniel {
+  background-image: url('../img/daniel.jpg');
+}
+
+.Lupe {
+  background-image: url('../img/lupe.jpg');
+}
+
+.text {
+  /*margin-top: 20px;*/
+  position: relative;
+  /*width:100%;*/
+  /*height: 100vh;
+  min-height: 520px;
+  display: inline-flex;
+  display: -webkit-flex;*/
+  margin-left: 30px;
+  margin-right: 30px;
+  min-width: 300px;
+  background-color: rgba(0,0,0,.5);
+  padding: 20px;
+}
+
+
+
 h1, h2, h3 {
   font-family: 'Amatic', fantasy;
   font-size: 60px;
 }
 
-.main{
-    background: url('../img/skull-and-bones.jpg');
-    background-size: cover;
-    color: rgb(255,255,255);
+h1 {
+  margin: 0px;
+  text-align: center;
 }
+
+p {
+  font-family: 'Gyre' sans-serif;
+  font-size: 20px;
+}
+
+
+
+footer {
+  background-color: black;
+}
+
 
 .container{
     max-width: 960px;
