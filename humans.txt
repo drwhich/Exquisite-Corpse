@@ -4,6 +4,7 @@
 # TEAM
 
     Daniel Henderson :: Developer :: Boulder, CO
+    Brady Risendal :: Developer :: Boulder, CO
 
 # THANKS
 
