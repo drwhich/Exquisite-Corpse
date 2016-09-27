@@ -149,7 +149,7 @@ section {
 
 .title {
   background-image: url('../img/skull-and-bones.jpg');
-<<<<<<< HEAD
+
   padding-bottom: 40%;
   padding-top: 45%;
 }
@@ -158,14 +158,10 @@ section {
   background-image: url('../img/brady.jpg');
   padding-bottom: 20%;
   padding-top: 20%;
-=======
   padding-top: 10%;
 }
 
-.Brady {
-  background-image: url('../img/brady.png');
->>>>>>> origin/master
-}
+
 
 .Eli {
   background-image: url('../img/skull-and-bones.jpg');
@@ -174,9 +170,13 @@ section {
 }
 
 .Daniel {
+
   background-image: url('../img/daniel.jpg');
    padding-bottom: 20%;
   padding-top: 20%;
+
+  background-image: url('../img/daniel.gif');
+
 }
 
 .Lupe {
@@ -261,11 +261,6 @@ footer {
 }
 
 
-.brady {
-  background-image: url("../img/oni-mask.jpg");
-  background-size: cover;
-
-}
 
 
 
